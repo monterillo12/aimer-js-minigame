@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style/main.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="game-name">Aimer Practice</h1>
+    <div class="marker">
+        <div class="marker-type" id="puntuation">0</div>
+        <div id="gameOver"></div>
+        <div class="marker-type" id="crono">00:00</div>
+    </div>
+
+    <div class="menu" id="main-menu">
+        <button id="play-btn" class="menu-item">Jugar</button><br>
+        <button id="dificulty-btn" class="menu-item">Seleccionar dificultad</button><br>
+        <button id="themes-btn" class="menu-item">Temas</button>
+    </div>
+
+    <div class="menu" id="dif-selector">
+        <button class="menu-item dif-btn" value="easy">Fácil</button><br>
+        <button class="menu-item dif-btn" value="medium">Medio</button><br>
+        <button class="menu-item dif-btn" value="hard">Dificil</button>
+    </div>
+
+    <div class="menu" id="themes">
+        <button class="menu-item theme-btn" value="classic">Clásico</button><br>
+        <button class="menu-item theme-btn" value="galaxy">Glaxia</button><br>
+        <button class="menu-item theme-btn" value="ligth">Claro</button>
+    </div>
+
+    <div class="container">
+        <div id="red-dot"></div>
+    </div>
+    
+    <script src="./code/main.js"></script>
+
+</body>
+</html>

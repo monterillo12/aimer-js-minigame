@@ -1,0 +1,156 @@
+@font-face {
+    font-family: digital;
+    src: url('../assets/fonts/DS-DIGIB.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --background: #212121;
+    --primary: #ff8c00;
+    --secondary: #ff8c0035;
+    --crono: #0000aa;
+    --puntuation: #00aa00;
+    --game-over: #ff0000;
+    --dot: #ff0000;
+    
+    /*--background: #1b0021;
+    --primary: #b7009b;
+    --secondary: #fa71ff35;
+    --crono: #b7009b;
+    --puntuation: #b7009b;
+    --game-over: #ff92ef;
+    --dot: #b7009b;*/
+
+    /*--background: #d0d0d0;
+    --primary: #003ffe;
+    --secondary: #003ffe35;
+    --crono: #003ffe;
+    --puntuation: #003ffe;
+    --game-over: #ed0000;
+    --dot: #ba0000;*/
+}
+
+body {
+    background-color: var(--background);
+}
+
+.game-name {
+    text-align: center;
+    color: var(--primary);
+    text-shadow: 0 0 5px var(--primary);
+    font-family: digital;
+    font-weight: bold;
+    font-size: 50px;
+    font-style: italic;
+    margin-top: 10px;    
+}
+
+.marker {
+    background-color: var(--secondary);
+    border: 3px solid var(--primary);
+    box-shadow: 0 0 8px var(--primary);
+    border-radius: 10px;
+    width: 1000px;
+    height: 80px;
+    margin: 30px auto 0 auto;
+    display: flex;
+}
+
+.marker-type {
+    background-color: var(--background);
+    border-radius: 10px;
+    width: 160px;
+    height: 60px;
+    margin: 7px auto;
+    font-family: digital;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 3px;
+}
+
+#puntuation {
+    box-shadow: 0 0 8px var(--puntuation);
+    border: 3px dashed var(--puntuation);
+    color: var(--puntuation);
+}
+
+#crono {
+    border: 3px dashed var(--crono);
+    box-shadow: 0 0 8px var(--crono);
+    color: var(--crono);
+}
+
+#gameOver {
+    color: var(--game-over);
+    text-shadow: 0 0 5px var(--game-over);
+    width: 240px;
+    height: 65px;
+    margin: 5px auto;
+    font-family: digital;
+    font-size: 50px;
+    text-align: center;
+    padding-top: 6px;
+}
+
+.container {
+    display: none;
+    border: 3px solid var(--primary);
+    border-radius: 10px;
+    background-color: var(--secondary);
+    width: 1000px;
+    height: 500px;
+    margin: 20px auto;
+    box-shadow: 0 0 8px var(--primary);
+}
+
+#red-dot {
+    background-color: var(--dot);
+    border: 5px solid var(--dot);
+    box-shadow: 0 0 10px var(--dot);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    /*margin-top: 455px;
+    margin-left: 955px;*/
+}
+
+.menu {
+    background-color: var(--secondary);
+    border: 3px solid var(--primary);
+    box-shadow: 0 0 8px var(--primary);
+    border-radius: 10px;
+    width: 1000px;
+    margin: 20px auto;
+    padding: 50px 0;
+}
+
+#dif-selector {display: none;}
+#themes {display: none;}
+
+.menu-item {
+    background-color: var(--background);
+    border: 3px solid var(--primary);
+    color: var(--primary);
+    box-shadow: 0 0 8px var(--primary);
+    width: 90%;
+    padding: 10px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.menu-item:hover { filter: brightness(80%); }
+.menu-item:active { 
+    filter: brightness(120%);
+    box-shadow: 0 0 10px var(--primary);
+}
