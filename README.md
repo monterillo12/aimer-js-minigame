@@ -1,5 +1,8 @@
 # Aimer JS Minigame
 
+<img src="./example-screenshot1.png">
+<img src="./example-screenshot2.png">
+
 ## Development
 
 Web based minigame created by JavaScript.
